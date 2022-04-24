@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.justify-content-xxl-between {
+    justify-content: space-between;
+}
+
+.align-items-xxl-center {
+    align-items: center;
+}
+
+/* xxl 1400 <= infinity */
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-xxl-1 {
+    width: calc(100%/12 * 1);
+    padding: 0 15px;
+}
+
+.col-xxl-2 {
+    width: calc(100%/12 * 2);
+    padding: 0 15px;
+}
+
+.col-xxl-3 {
+    width: calc(100%/12 * 3);
+    padding: 0 15px;
+}
+
+.col-xxl-4 {
+    width: calc(100%/12 * 4);
+    padding: 0 15px;
+}
+
+.col-xxl-5 {
+    width: calc(100%/12 * 5);
+    padding: 0 15px;
+}
+
+.col-xxl-6 {
+    width: calc(100%/12 * 6);
+    padding: 0 15px;
+}
+
+.col-xxl-7 {
+    width: calc(100%/12 * 7);
+    padding: 0 15px;
+}
+
+.col-xxl-8 {
+    width: calc(100%/12 * 8);
+    padding: 0 15px;
+}
+
+.col-xxl-9 {
+    width: calc(100%/12 * 9);
+    padding: 0 15px;
+}
+
+.col-xxl-10 {
+    width: calc(100%/12 * 10);
+    padding: 0 15px;
+}
+
+.col-xxl-11 {
+    width: calc(100%/12 * 11);
+    padding: 0 15px;
+}
+
+.col-xxl-12 {
+    width: calc(100%/12 * 12);
+    padding: 0 15px;
+}
+
+/* xl 1200 <= 1399 */
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* lg 992 <= 1199 */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* md 768 <= 991 */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* sm 576 <= 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* xs <= 575 */
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* =============== header started */
+header {
+    background: url(./images/bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 152px;
+}
+
+nav .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #4e9f0d;
+    display: block;
+    padding: 8px 19px 7px 18px;
+    text-align: center;
+    border: 3px solid #62be19;
+    border-radius: 5px;
+    line-height: 17px;
+    box-shadow: inset 0 0 5px rgba(30, 30, 30, 0.15);
+    margin-top: 30px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    color: #69cf17;
+    padding: 37px 11px 29px 10px;
+}
+
+header nav ul li a span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #69cf17;
+    text-align: center;
+}
+
+header nav ul li a:hover {
+    background: rgba(105, 207, 23, .75);
+    color: #fff;
+}
+
+header .hero {
+    padding-top: 150px;
+}
+
+header .hero h1 {
+    color: #69cf17;
+    font-size: 72px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    line-height: 66px;
+}
+
+header .hero span {
+    color: #69cf17;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 25px;
+}
+
+header .hero p {
+    color: #dedede;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 30px;
+    margin-bottom: 75px;
+}
+
+header .hero button {
+    font-size: 60px;
+    font-family: 'Raleway';
+    color: #fff;
+    font-weight: 100;
+    line-height: 45px;
+    background: rgba(105, 207, 23, .75);
+    border: none;
+    display: block;
+    padding: 28px 90px;
+    cursor: pointer;
+}
+
+/* ========================= burgers started */
+.burgers {
+    padding-top: 50px;
+    padding-bottom: 52px;
+    background: #060002;
+}
+
+.burgers nav {
+    margin-bottom: 69px;
+}
+
+.burgers nav ul {
+    display: flex;
+}
+
+.burgers nav ul li a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #7a7a7a;
+    margin-right: 48px;
+    transition: .5s;
+}
+
+.burgers nav ul li a:hover {
+    color: #69cf17;
+}
+
+.burgers .carts .cart {
+    margin-bottom: 51px;
+}
+
+.burgers .carts .cart .cart_top {
+    margin-bottom: 31px;
+    position: relative;
+    overflow: hidden;
+}
+
+.burgers .carts .cart .cart_top .cart_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.burgers .carts .cart .cart_top .cart_img span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(105, 207, 23, .75);
+    padding: 21px 58px;
+    color: #dedede;
+    line-height: 24px;
+    font-size: 24px;
+}
+
+.burgers .carts .cart .cart_top .cart_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.burgers .carts .cart .cart_top .cart_hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 207, 23, .90);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .5s;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.burgers .carts .cart .cart_top:hover .cart_hover {
+    transform: scale(1) rotate(360deg);
+}
+
+.burgers .carts .cart .cart_top:hover .cart_img span {
+    opacity: 0;
+}
+
+.burgers .carts .cart .cart_bottom h2 {
+    color: #69cf17;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.burgers .carts .cart .cart_bottom p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #dedede;
+    font-weight: 400;
+}
+
+/* ==================== unique started */
+.unique {
+    padding: 51px 0 100px;
+    background: url(./images/section_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.title {
+    font-size: 36px;
+    color: #69cf17;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.unique h2 {
+    margin-bottom: 48px;
+}
+
+.unique h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #69cf17;
+    margin: auto;
+    margin-top: 19px;
+}
+
+.unique p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.unique p:last-child {
+    margin-top: 29px;
+}
+
+/* ==================== location started */
+.location {
+    padding-top: 48px;
+}
+
+.location .map {
+    margin-top: 56px;
+    height: 500px;
+}
+
+.location .map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ================ footer started */
+footer {
+    background: #060002;
+    padding: 40px 0 51px;
+}
+
+footer nav {
+    margin-bottom: 50px;
+}
+
+footer nav .logo {
+    margin-top: 0;
+}
+
+footer nav .number {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4e9f0d;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .nav ul li a {
+    display: block;
+    margin: 0 26px;
+    font-weight: 100;
+    font-size: 18px;
+    color: #fff;
+}
+
+footer .nav p {
+    font-weight: 100;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+}
