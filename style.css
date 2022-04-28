@@ -272,6 +272,7 @@ header .hero button {
     color: #dedede;
     line-height: 24px;
     font-size: 24px;
+    transition: .2s;
 }
 
 .burgers .carts .cart .cart_top .cart_img img {
@@ -423,3 +424,231 @@ footer .nav p {
     text-align: center;
     margin-top: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================xl 1200<1399 */
+@media (max-width:1399px) {
+    
+}
+/* ====================xl 1200<1399 */
+
+/* ================================ lg 992<=1199 */
+@media (max-width:1199px) {
+    .col-lg-3 {
+        width: calc(100%/12 * 3);
+        padding: 0 15px;
+    }
+    .col-lg-6 {
+        width: calc(100%/12 * 6);
+        padding: 0 15px;
+    }
+    .col-lg-9 {
+        width: calc(100%/12 * 9);
+        padding: 0 15px;
+    }
+    
+    header .hero{
+        padding-top: 105px;
+    }
+    header .hero h1{
+        font-size: 63px;
+        line-height: 55px;
+        margin-bottom: 15px;
+    }
+    header .hero p{
+      margin-bottom: 65px;  
+    }
+    header .hero button{
+        font-size: 50px;
+        padding: 20px 80px;
+    }
+    header{
+       padding-bottom: 120px; 
+       background-size: cover;
+       background-position: center center;
+    }
+    .unique {
+        background-size: cover;
+        background-position: center center;
+    }
+    
+}
+/* ================================ lg 992<=1199 */
+
+/* ======================================md 768<=991 */
+@media (max-width:991px) {
+    .col-md-7 {
+        width: calc(100%/12 * 7);
+        padding: 0 15px;
+    }
+    .col-md-4 {
+        width: calc(100%/12 * 4);
+        padding: 0 15px;
+    }
+    header{
+        padding-bottom: 45px;
+    }
+    header .hero{
+        padding-top: 80px;
+    }
+    header .hero h1{
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+    header .hero button{
+        font-size: 45px;
+        padding: 15px 60px;
+    }
+    .burgers .carts .cart .cart_top .cart_img span{
+        font-size: 22px;
+        padding: 12px 40px;
+    }
+    footer .nav ul li a{
+        margin: 0 20px;
+    }
+}
+/* ======================================md 768<=991 */
+
+/* ============================================sm 576==<767 */
+@media (max-width:767px) {
+    .col-sm-4 {
+        width: calc(100%/12 * 4 );
+        padding: 0 15px;
+    }
+    .justify-content-sm-center{
+        justify-content: center;
+    }
+    .col-sm-12 {
+        width: calc(100%/12 * 12 );
+        padding: 0 15px;
+    }
+    .col-sm-6 {
+        width: calc(100%/12 * 6 );
+        padding: 0 15px;
+    }
+    
+    header nav ul{
+        justify-content: center;
+    }
+    header .hero{
+        padding-top: 30px;
+    }
+    header .hero h1{
+        font-size: 40px;
+    }
+    header .hero span{
+        line-height: 20px;
+        font-size: 27px;
+    }
+    header .hero p{
+        margin-bottom: 45px;
+        font-size: 16px;
+    }
+    header .hero button{
+        font-size: 28px;
+        padding: 10px 30px;
+    }
+    header{
+        padding-bottom: 60px;
+    }
+    .burgers nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .burgers nav ul li a{
+        margin-right: 0;
+    }
+    .burgers .carts .cart{
+        margin-bottom: 30px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .unique h2{
+        margin-bottom: 35px;
+    }
+    .unique p{
+        font-size: 16px;
+    }
+    .unique{
+        padding-bottom: 60px;
+    }
+    footer .nav ul{
+        flex-direction: column;
+    }
+    footer .nav ul li a{
+        margin-bottom: 10px;
+    }
+    .burgers nav ul li a{
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+/* ============================================sm 576==<767 */
+
+/* ===========================================xs 320<=575 */
+@media (max-width:575px) {
+    .col-7{
+        width: calc(100%/12 * 7 );
+        padding: 0 15px;
+    }
+    .col-12{
+        width: calc(100%/12 * 12 );
+        padding: 0 15px;
+    }
+    header nav ul{
+        display: none;
+    }
+    header .hero h1{
+        font-size: 35px;
+        text-align: center;
+        line-height: 40px;
+    }
+    header .hero span{
+        font-size: 23px;
+        text-align: center;
+        display: block;
+    }
+    header .hero p{
+        text-align: center;
+    }
+    header .hero button{
+        margin: auto;
+    }
+    header{
+        background-position: 69% center;
+    }
+    .title{
+        font-size: 22px;
+    }
+    .unique p{
+        text-align: center;
+    }
+    .location .map {
+        height: 450px;
+    }
+    .justify-content-center{
+        justify-content: center;
+    }
+    footer nav{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    footer nav .number{
+        text-align: center;
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
+/* ===========================================xs 320<=575 */
